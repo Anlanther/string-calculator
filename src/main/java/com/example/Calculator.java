@@ -10,9 +10,9 @@ public class Calculator {
 		answer = 0;
 		// List with just numbers
 		String[] numbers = toCalc.split("[^0-9]");
-		// List with just regex
+		// List with just symbols
 		String[] regEx = toCalc.replaceAll("[0-9]", "").split("");
-		// New list of length numbers and regex for calculation
+		// New list of length numbers and symbols for calculation
 		String[] numInput = new String[(numbers.length + regEx.length)];
 		// Sorted equation array
 		String[] calcInput = organiseCalcArray(numbers, regEx, numInput);
